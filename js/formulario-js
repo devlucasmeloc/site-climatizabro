@@ -4,8 +4,6 @@ const telefone = document.querySelector("#telefone");
 const email = document.querySelector("#email");
 const mensagem = document.querySelector("#mensagem");
 let feedback = document.createElement("p");
-feedback.textContent = "Por favor, preencha todos os campos do formulário!";
-feedback.style.color = "red";
 feedback.style.marginTop = "20px";
 
 
@@ -14,6 +12,13 @@ formulario.addEventListener("submit", (event) => {
 
     let campoEstaVazio = nome.value === "" || telefone.value === "" || email.value === "" || mensagem.value === "";
     if (campoEstaVazio) {
+        feedback.style.color = "red";
+        feedback.textContent = "Por favor, preencha todos os campos do formulário!";
         formulario.appendChild(feedback);
+    } else {
+        feedback.style.color = "blue";
+        feedback.textContent = "Formulário enviado com sucesso!";
+        formulario.appendChild(feedback);
+        
     }
 })
