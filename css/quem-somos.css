@@ -1,0 +1,63 @@
+.quem-somos {
+    background-color: var(--azul-claro);
+    color: var(--branco-primario);
+}
+
+.quem-somos-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+.quem-somos-titulo {
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.quem-somos-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.quem-somos-texto {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    max-width: 520px;
+}
+
+.quem-somos-texto p {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1050px) {
+    .quem-somos-conteudo {
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .quem-somos-conteudo {
+        align-items: start;
+    }
+
+    .quem-somos-foto {
+        width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .quem-somos-titulo {
+        font-size: 1.5rem;
+    }
+    
+    .quem-somos-conteudo {
+        flex-direction: column;
+    }
+
+    .quem-somos-foto {
+        width: 100%;
+    }
+    
+}

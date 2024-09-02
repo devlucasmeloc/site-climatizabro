@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --preto-primario: #000000;
+    --preto-secundario: #121212;
+    --azul-escuro-primario: #003472;
+    --azul-escuro-secundario: #052B58;
+    --azul-claro: #0164DA;
+    --branco-primario: #FFFFFF;
+    --branco-secundario: #F8F8F8;
+    --font-inter: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-inter);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 0;
+}

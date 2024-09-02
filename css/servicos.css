@@ -1,0 +1,104 @@
+.servicos {
+    background-color: var(--branco-primario);
+}
+
+.servicos-container {
+    max-width: 1400px;
+    padding: 70px 20px;
+    margin: 0 auto;
+}
+
+.servicos-titulo {
+    font-size: 2rem;
+    margin-bottom: 60px;
+    color: var(--preto-primario);
+}
+
+.servico {
+    display: flex;
+    margin-bottom: 80px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+
+}
+
+.servico-imagem {
+    height: 370px;
+    width: 270px;
+    z-index: 3;
+}
+
+.imagem-residencial {
+    background-image: url("../imagens/fotos/residencial.png");
+}
+
+.imagem-empresarial {
+    background-image: url("../imagens/fotos/empresarial.png");
+}
+
+.servico-descricao {
+    border: 2px solid var(--azul-escuro-primario);
+    padding: 40px 0px 20px 30px;
+    position: absolute;
+    left: 265px;
+    height: 302px;
+    display: block;
+    max-width: 100%;
+    width: 600px;
+}
+
+.servico-subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.servico-texto {
+    max-width: 400px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.servico-botao {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: var(--branco-primario);
+    background-color: var(--azul-escuro-primario);
+    padding: 15px 40px;
+}
+
+@media (max-width: 920px) {
+    .servico-descricao {
+        width: 420px;
+    }
+}
+
+@media (max-width: 760px) {
+    .servico {
+        position: static;
+    }
+    
+    .servico-imagem {
+        display: none;
+    }
+
+    .servico-descricao {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .servicos-titulo {
+        font-size: 1.5rem;
+    }
+    .servico-subtitulo {
+        font-size: 1.25rem;
+    }
+}
+

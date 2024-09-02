@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.header-container-empresarial {
+    display: flex;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.link-home {
+    background-color: var(--azul-escuro-secundario);
+    color: var(--branco-primario);
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.empresarial {
+    margin-top: 70px;
+}
+
+.empresarial-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.empresarial-container {
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+form {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+}
+  
+input, textarea {
+    display: block;
+    border: 0.15rem solid var(--azul-escuro-secundario);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  label {
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    display: block;
+    font-size: 1.5rem;
+  }
+  
+  input, textarea {
+    padding: 10px;
+  }
+
+  input, textarea , input::placeholder, textarea::placeholder{
+    font-size: 1.125rem;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .input-container-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .input-container-item  input {
+    flex-grow: 1;
+    flex-shrink: auto;
+  }
+  
+  #email {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  #mensagem {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  button {
+    border: none;
+    background-color: var(--azul-escuro-secundario);
+    color: var(--branco-primario);
+    padding: 10px 40px;
+    font-size: 1.125rem;
+    cursor: pointer;
+  }
+  
+  input:hover, input:focus, textarea:hover, textarea:focus {
+    outline: none;
+    border-color: var(--azul-claro);
+    box-shadow: 0 0 0 0.1rem var(--azul-claro);
+  }
+
+
+  @media (max-width: 650px) {
+
+    .empresarial-container {
+        padding: 10px;
+    }
+
+    .empresarial-titulo {
+        font-size: 1.5rem;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    label, input::placeholder{
+        font-size: 1rem;
+    }
+
+
+  }
+
+
+  @media (max-width: 400px) {
+    .header-container-empresarial {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
