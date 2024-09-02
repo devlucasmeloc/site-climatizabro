@@ -1,0 +1,19 @@
+const formulario = document.querySelector("form");
+const nome = document.querySelector("#nome");
+const telefone = document.querySelector("#telefone");
+const email = document.querySelector("#email");
+const mensagem = document.querySelector("#mensagem");
+let feedback = document.createElement("p");
+feedback.textContent = "Por favor, preencha todos os campos do formulário!";
+feedback.style.color = "red";
+feedback.style.marginTop = "20px";
+
+
+formulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let campoEstaVazio = nome.value === "" || telefone.value === "" || email.value === "" || mensagem.value === "";
+    if (campoEstaVazio) {
+        formulario.appendChild(feedback);
+    }
+})
