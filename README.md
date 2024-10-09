@@ -2,7 +2,7 @@
 
 Uma site voltado para negócio local fictício de climatização feito com HTML e CSS e JavaScript.
 
-![Site Para Negócio de Climatização](./imagens/fotos/captura-de-tela-climatizabro.png)
+![Site Para Negócio de Climatização](./imagens/fotos/interface.png)
 
 ## Tecnologias Utilizadas
 
